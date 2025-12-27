@@ -45,6 +45,7 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+        commit: 1634d3d263b881dccc62bf278d1289b471ec7af1
       - type: file
         url: https://raw.githubusercontent.com/jellyfin/jellyfin-desktop/eba84d1/resources/meta/org.jellyfin.JellyfinDesktop.appdata.xml
         sha256: 8d3705bb23be41d1aeca76bb2ec314a853d02b06b5487338e64ae725a1b79804
