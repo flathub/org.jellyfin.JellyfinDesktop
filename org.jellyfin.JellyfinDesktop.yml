@@ -45,6 +45,7 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+        commit: 1634d3d263b881dccc62bf278d1289b471ec7af1
       - type: file
         url: https://raw.githubusercontent.com/jellyfin/jellyfin-desktop/eba84d1/resources/meta/org.jellyfin.JellyfinDesktop.appdata.xml
         sha256: 8d3705bb23be41d1aeca76bb2ec314a853d02b06b5487338e64ae725a1b79804
@@ -100,8 +101,8 @@ modules:
                 sources:
                   - type: git
                     url: https://github.com/openresty/luajit2.git
-                    tag: v2.1-20251030
-                    commit: 71fae383f6c4637d64b03a6d0ec76ae8c19d6821
+                    tag: v2.1-20260114
+                    commit: ccdd3299da29f6e0148192c7d2b4f11c9b553b7a
                     x-checker-data:
                       type: git
                       tag-pattern: ^v([\d.-]+)$
@@ -116,8 +117,8 @@ modules:
                 sources:
                   - type: git
                     url: https://github.com/haasn/libplacebo.git
-                    tag: v7.351.0
-                    commit: 3188549fba13bbdf3a5a98de2a38c2e71f04e21e
+                    tag: v7.360.0
+                    commit: b2ea27dceb6418aabfe9121174c6dbb232942998
                     x-checker-data:
                       type: git
                       tag-pattern: ^v([\d.]+)$
