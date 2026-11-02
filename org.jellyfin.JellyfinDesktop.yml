@@ -45,8 +45,10 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+        commit: 1634d3d263b881dccc62bf278d1289b471ec7af1
       - type: file
-        url: https://raw.githubusercontent.com/jellyfin/jellyfin-desktop/eba84d1/resources/meta/org.jellyfin.JellyfinDesktop.appdata.xml
+        url: 
+          https://raw.githubusercontent.com/jellyfin/jellyfin-desktop/eba84d1/resources/meta/org.jellyfin.JellyfinDesktop.appdata.xml
         sha256: 8d3705bb23be41d1aeca76bb2ec314a853d02b06b5487338e64ae725a1b79804
         dest-filename: org.jellyfin.JellyfinDesktop.metainfo.xml
     modules:
@@ -54,8 +56,8 @@ modules:
         buildsystem: cmake-ninja
         sources:
           - type: archive
-            url: https://download.kde.org/stable/mpvqt/mpvqt-1.1.1.tar.xz
-            sha256: bdd1ea69338cf3017f628a886218b8c185ca24e8257f03207a3cf1bbb51e3d32
+            url: https://download.kde.org/stable/mpvqt/mpvqt-1.2.1.tar.xz
+            sha256: 6ff5f56a0edd8248073446e5cc038f47d4b17c46b6af43cf438123d0ac911189
             x-checker-data:
               type: anitya
               project-id: 370634
@@ -100,8 +102,8 @@ modules:
                 sources:
                   - type: git
                     url: https://github.com/openresty/luajit2.git
-                    tag: v2.1-20251030
-                    commit: 71fae383f6c4637d64b03a6d0ec76ae8c19d6821
+                    tag: v2.1-20261023
+                    commit: 5d8d0a27bfa4595b24b8ed36123555fcd2bb2f8c
                     x-checker-data:
                       type: git
                       tag-pattern: ^v([\d.-]+)$
@@ -116,8 +118,8 @@ modules:
                 sources:
                   - type: git
                     url: https://github.com/haasn/libplacebo.git
-                    tag: v7.351.0
-                    commit: 3188549fba13bbdf3a5a98de2a38c2e71f04e21e
+                    tag: v7.387.0
+                    commit: 275f7dea27924cdd34ab2e6c20e448b6bc4fab65
                     x-checker-data:
                       type: git
                       tag-pattern: ^v([\d.]+)$
@@ -144,13 +146,14 @@ modules:
                   - --enable-fontconfig
                 sources:
                   - type: archive
-                    url: https://github.com/libass/libass/releases/download/0.17.4/libass-0.17.4.tar.gz
-                    sha256: a886b3b80867f437bc55cff3280a652bfa0d37b43d2aff39ddf3c4f288b8c5a8
+                    url: https://github.com/libass/libass/releases/download/0.17.5/libass-0.17.5.tar.gz
+                    sha256: caab4b993dd7be6187c55623b789ed75dddefea6e65938af134637c732fe094a
                     x-checker-data:
                       type: anitya
                       project-id: 1560
                       stable-only: true
-                      url-template: https://github.com/libass/libass/releases/download/$version/libass-$version.tar.gz
+                      url-template: 
+                        https://github.com/libass/libass/releases/download/$version/libass-$version.tar.gz
 
               - name: uchardet
                 buildsystem: cmake-ninja
