@@ -41,7 +41,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/jellyfin/jellyfin-desktop.git
-        tag: v2.1.0-pre1
+        tag: v2.1.0-pre2
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
